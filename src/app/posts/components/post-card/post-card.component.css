@@ -1,0 +1,30 @@
+.card-wrapper {
+    padding: 1em;
+    height: 150px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-radius: 0.8em;
+    box-shadow: 0 2px 2px #eee;
+    transition: transform 0.3s ease-in;
+    width: 250px;
+    height: 100%;
+}
+
+.post:hover {
+    box-shadow: 0 4px 4px #eee;
+    transform: scale(1.1);
+}
+
+.post-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-body {
+    padding: 1em;
+    text-align: justify;
+}

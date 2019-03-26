@@ -1,0 +1,11 @@
+<div *ngIf="loading$ | async">
+  <div class="loader loader-default is-active"></div>
+</div>
+
+<div *ngIf="error$ | async as error">
+  <p>An error occurred: {{ error.message }}</p>
+</div>
+
+<section *ngIf="posts$ | async as posts" class="posts-list">
+  <app-post-card *ngFor="let post of posts" [post]="post"></app-post-card>
+</section>
