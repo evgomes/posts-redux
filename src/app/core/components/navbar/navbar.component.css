@@ -8,6 +8,11 @@
     justify-content: center;
     background-color: #ddd;
     border-bottom: 1px solid #eee;
+    transition: opacity 0.1s linear;
+}
+
+.navbar.transparency {
+    opacity: 0.5;
 }
 
 .navbar h1 {

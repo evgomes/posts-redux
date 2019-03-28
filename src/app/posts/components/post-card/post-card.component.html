@@ -1,10 +1,10 @@
 <div class="card-wrapper">
   <article class="post">
     <div class="post-header">
-      {{ post.title }}
+      {{ post.title | slice : 1 : 30 | titlecase }}
     </div>
     <div class="post-body">
-      {{ post.body | slice : 1 : 50 }}
+      {{ post.body | slice : 1 : 70 }}
     </div>
   </article>
 </div>

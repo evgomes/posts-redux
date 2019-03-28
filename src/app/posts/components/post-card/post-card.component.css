@@ -7,7 +7,7 @@
     border: 1px solid #ddd;
     border-radius: 0.8em;
     box-shadow: 0 2px 2px #eee;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.2s ease-in;
     width: 250px;
     height: 100%;
 }
@@ -22,6 +22,7 @@
     font-size: 18px;
     font-weight: bold;
     border-bottom: 1px solid #ddd;
+    padding: 0.5em;
 }
 
 .post-body {

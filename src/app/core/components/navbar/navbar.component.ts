@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  navbarClasses: string = 'navbar';
+  
+  @HostListener('window:scroll')
+  onScroll() {
+    this.navbarClasses = (window.scrollY < 60) ? 'navbar' : 'navbar transparency';
+  }
 }
